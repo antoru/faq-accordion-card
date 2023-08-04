@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+//fonts
+$mainFont:'Kumbh Sans', sans-serif;
+
+$regular:400;
+$bold:700;
+
+// colors
+
+$bodyColor:#1E1F36;
+$bodyBackground:linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+
+///breakpoint
+$breakpoint-desktop-min: 950px;
+$breakpoint-mobile-max: 949px;

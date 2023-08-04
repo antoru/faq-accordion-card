@@ -1,0 +1,288 @@
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+
+    @include main_font_regular;
+    font-size: 1.6rem;
+
+    color: $bodyColor;
+    background: $bodyBackground;
+
+    strong {
+        @include main_font_bold;
+    }
+
+    @include big_device {
+        overflow: hidden
+    }
+
+    @include small_device {}
+
+}
+
+.page {
+
+    @include main_font_regular;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    &__container {
+
+        width: 100%;
+        
+
+        margin: 0 auto;
+
+        @include big_device {
+            padding: 0 1.5rem;
+            max-width: 95rem;
+        }
+
+        @include small_device {
+            padding: 4rem 2.4rem;
+            max-width: 37.5rem;
+        }
+
+    }
+
+    .component {
+
+        border-radius: 3.2rem;
+
+        @include big_device {
+            display: flex;
+            background-color: #fff;
+        }
+
+        &__img {
+
+            @include big_device {
+                flex: 0 0 38.8rem;
+                position: relative;
+            }
+
+            @include small_device {
+                padding: 0 4.5rem;
+            }
+
+            &__main {
+
+                @include big_device {
+                    position: relative;
+                    width: 38.8rem;
+                    height: 100%;
+                    overflow: hidden;
+                }
+
+                @include small_device {
+                    margin-bottom: -6.8rem;
+                }
+
+                img {
+
+                    @include big_device {
+                        position: absolute;
+                        left: -8.4rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    @include small_device {
+                        @include img_responsive;
+                    }
+
+                }
+            }
+
+            &__bg {
+
+                @include big_device {
+                    position: absolute;
+                    left: -57.6rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                @include small_device {
+                    @include img_responsive;
+                }
+
+            }
+
+            &__box {
+
+                @include big_device {
+                    position: absolute;
+                    left: -10rem;
+                    top: 40%;
+                }
+
+            }
+
+        }
+
+        &__acc {
+
+            @include big_device {
+                padding: 6.5rem 9.5rem 8.3rem 8.7rem;
+                flex: 0 0 53.2rem;
+            }
+
+            @include small_device {
+
+                background-color: #fff;
+                padding: 13.2rem 2.4rem 4.8rem;
+                border-radius: 3.2rem;
+                margin-top: -12rem;
+
+            }
+
+            &__title {
+
+                @include main_font_bold;
+                font-size: 3.2rem;
+
+                @include big_device {
+                    width: 35rem;
+                }
+
+                @include small_device {
+                    text-align: center;
+                }
+
+            }
+
+            &__container {
+
+                @include big_device {
+                    width: 35rem;
+                    margin-top: 1.6rem;
+                }
+
+                @include small_device {
+                    margin-top: 2.1rem;
+                }
+
+            }
+
+            .vfa_accordion_container {
+
+                border-bottom: 1px solid #E8E8EA;
+
+                &+.vfa_paTitle {
+                    margin-top: 32px;
+                }
+
+                .vfa_accordion {
+
+                    margin-top: 16px;
+                    color: #444;
+                    cursor: pointer;
+                    width: 100%;
+                    border: none;
+                    text-align: left;
+                    outline: none;
+                    transition: 0.4s;
+                    background-color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    padding: 19px 16px 19px 0;
+                    border-radius: 6px;
+
+                    @include small_device {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    &:first-of-type {
+                        margin-top: 0;
+                    }
+
+                    &.active {
+
+                        .vfa_accordion_span {
+                            font-weight: 700;
+
+                            &:hover {
+                                color: #4B4C5F;
+                            }
+
+                        }
+
+                        .vfa_accordion_after {
+                            transform: rotate(180deg);
+                        }
+
+                    }
+
+                    .vfa_accordion_span {
+
+                        @include main_font_regular;
+                        line-height: 1;
+                        margin-bottom: 0;
+                        color: #4B4C5F;
+
+                        @include big_device {
+                            font-size: 1.4rem;
+                        }
+
+                        @include small_device {
+                            font-size: 1.3rem;
+                        }
+
+                        &:hover {
+                            @include big_device {
+                                color: #F47B56;
+                            }
+                        }
+
+                    }
+
+                    .vfa_accordion_after {
+                        display: flex;
+                        width: 1rem;
+                        height: .7rem;
+                        margin-left: 16px;
+                        transition: ease all 0.3s;
+                        flex-grow: 0;
+                        flex-shrink: 0;
+
+                        img {
+                            @include img_responsive;
+                        }
+
+                    }
+
+                }
+
+                .vfa_panel {
+
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+
+                    .vfa_accordion_p {
+
+                        font-size: 1.2rem;
+                        margin-bottom: 16px;
+                        padding: 0 24px 0 0;
+
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+}

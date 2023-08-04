@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <link rel="stylesheet" href="./style/main.css">
+
+  <script src="./js/vfa_accordion.js" defer></script>
+
+</head>
+
+<body>
+
+  <main class="page">
+
+    <div class="page__container">
+
+      <div class="component">
+
+        <div class="component__img">
+
+          <div class="component__img__main">
+
+            <picture>
+              <!-- img desktop -->
+              <source srcset="./images/illustration-woman-online-desktop.svg" media="(min-width: 950px)">
+              <!-- img mobile -->
+              <source srcset="./images/illustration-woman-online-mobile.svg" media="(max-width: 949px)">
+              <!-- reinserire img desktop -->
+              <img src="./images/illustration-woman-online-desktop.svg" alt="">
+            </picture>
+
+          </div>
+
+          <picture>
+            <!-- img desktop -->
+            <source srcset="./images/bg-pattern-desktop.svg" media="(min-width: 950px)">
+            <!-- img mobile -->
+            <source srcset="./images/bg-pattern-mobile.svg" media="(max-width: 949px)">
+            <!-- reinserire img desktop -->
+            <img src="./images/bg-pattern-desktop.svg" alt="" class="component__img__bg">
+          </picture>
+
+          <picture>
+            <!-- img desktop -->
+            <source srcset="./images/illustration-box-desktop.svg" media="(min-width: 950px)">
+            <!-- img mobile -->
+            <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" media="(max-width: 949px)">
+            <!-- reinserire img desktop -->
+            <img src="./images/illustration-box-desktop.svg" alt="" class="component__img__box">
+          </picture>
+
+        </div>
+
+        <div class="component__acc">
+
+          <h1 class="component__acc__title">
+            FAQ
+          </h1>
+
+          <div class="component__acc__container">
+
+            <!-- acc 1 -->
+            <div class="vfa_accordion_container">
+
+              <button class="vfa_accordion">
+
+                <span class="vfa_accordion_span">
+                  How many team members can I invite?
+                </span>
+
+                <div class="vfa_accordion_after">
+                  <img src="./images/icon-arrow-down.svg" alt="">
+                </div>
+
+              </button>
+
+              <div class="vfa_panel">
+                <p class="vfa_accordion_p">
+
+                  No more than 2GB. All files in your account must fit your allotted storage space.
+                </p>
+              </div>
+            </div>
+            <!-- end of acc 1 -->
+
+            <!-- acc 2 -->
+            <div class="vfa_accordion_container">
+
+              <button class="vfa_accordion">
+
+                <span class="vfa_accordion_span">
+                  What is the maximum file upload size?
+                </span>
+
+                <div class="vfa_accordion_after">
+                  <img src="./images/icon-arrow-down.svg" alt="">
+                </div>
+
+              </button>
+
+              <div class="vfa_panel">
+                <p class="vfa_accordion_p">
+
+                  No more than 2GB. All files in your account must fit your allotted storage space.
+                </p>
+              </div>
+            </div>
+            <!-- end of acc 2 -->
+
+            <!-- acc 3 -->
+            <div class="vfa_accordion_container">
+
+              <button class="vfa_accordion">
+
+                <span class="vfa_accordion_span">
+                  How do I reset my password?
+                </span>
+
+                <div class="vfa_accordion_after">
+                  <img src="./images/icon-arrow-down.svg" alt="">
+                </div>
+
+              </button>
+
+              <div class="vfa_panel">
+                <p class="vfa_accordion_p">
+
+                  No more than 2GB. All files in your account must fit your allotted storage space.
+                </p>
+              </div>
+            </div>
+            <!-- end of acc 3 -->
+
+            <!-- acc 4 -->
+            <div class="vfa_accordion_container">
+
+              <button class="vfa_accordion">
+
+                <span class="vfa_accordion_span">
+                  Can I cancel my subscription?
+                </span>
+
+                <div class="vfa_accordion_after">
+                  <img src="./images/icon-arrow-down.svg" alt="">
+                </div>
+
+              </button>
+
+              <div class="vfa_panel">
+                <p class="vfa_accordion_p">
+
+                  No more than 2GB. All files in your account must fit your allotted storage space.
+                </p>
+              </div>
+            </div>
+            <!-- end of acc 4 -->
+
+            <!-- acc 5 -->
+            <div class="vfa_accordion_container">
+
+              <button class="vfa_accordion">
+
+                <span class="vfa_accordion_span">
+                  Do you provide additional support?
+                </span>
+
+                <div class="vfa_accordion_after">
+                  <img src="./images/icon-arrow-down.svg" alt="">
+                </div>
+
+              </button>
+
+              <div class="vfa_panel">
+                <p class="vfa_accordion_p">
+
+                  No more than 2GB. All files in your account must fit your allotted storage space.
+                </p>
+              </div>
+            </div>
+            <!-- end of acc 5 -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
